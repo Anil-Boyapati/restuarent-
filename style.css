@@ -1,0 +1,197 @@
+/* General styles */
+body {
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    background-color: darkgoldenrod;
+    /* text-align: center; Align all text to center */
+}
+
+.head h1 {
+    color: navy;
+    text-shadow: 2px 2px black;
+    text-align: center;
+    font-size: 50px;
+}
+
+.home {
+    text-align: center;
+}
+
+.nav {
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 30px;
+    align-items: center;
+}
+
+.nav a {
+    margin-right: 30px;
+}
+
+.nav a:active {
+    color: indigo;
+}
+
+.nav a:hover {
+    color: black;
+}
+
+.nav a:link {
+    color: blue;
+}
+
+nav a:visited {
+    color: red;
+}
+
+.about {
+    text-align: center;
+    justify-content: center;
+
+}
+
+.about2 {
+    display: flex;
+    justify-content: center;
+}
+
+.about1 {
+
+    border: 2px solid black;
+    line-height: 25px;
+    word-spacing: 4px;
+    width: 70%;
+
+    align-items: center;
+
+
+}
+
+.about,.about1,.home,.menu,.contact {
+    text-align: center;
+    /* Ensure all sections have centered text */
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+}
+
+.menu {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.menu1 {
+    text-align: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.contact1 {
+    padding-left: 250px;
+    padding-right: 250px;
+    margin-left: 100px;
+    text-align: center;
+}
+
+.contact h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.row i {
+    font-size: 35px;
+    color: brown;
+}
+
+.info h3 {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.faqs2 {
+    display: flex;
+    justify-content: center;
+}
+.faqs h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.faqs1 ul {
+    width: 70%;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    justify-content: center;
+}
+
+/* Styles for mobile devices */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav a {
+        padding: 8px;
+        font-size: 16px;
+    }
+
+    .image-container {
+        flex-direction: column;
+        position: relative;
+    }
+
+    .about1,
+    .menu1,
+    .contact1,
+    .faqs1 {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .menu1 table {
+        width: 100%;
+    }
+
+    .faqs1 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .head h1 {
+        font-size: 22px;
+    }
+
+    .about {
+        font-size: 20px;
+    }
+
+    .menu {
+        font-size: 24px;
+    }
+}
